@@ -1,0 +1,121 @@
+.header {
+    background: $color-white-1;
+    box-shadow: 0 1px 15px rgba(0,0,0,.1);
+    position: relative;
+    z-index: 998;
+    @media (max-width: $md) {
+        padding-top: 17px;
+        padding-bottom: 17px;
+    }
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+    &__logo {
+        max-width: 170px;
+        margin-right: 20px;
+        display: inline-block;
+        flex: 0 0 170px;
+        transition: all .4s;
+        @media (max-width: $xl) {
+            max-width: 150px;
+            flex-basis: 150px;
+        }
+        @media (max-width: $md) {
+            max-width: 120px;
+            flex-basis: 120px;
+        }
+        @media (max-width: $xs) {
+            max-width: 100px;
+            flex-basis: 100px;
+        }
+        &:hover {
+            text-decoration: none;
+            @media (min-width: $lg-mf) {
+                opacity: .6;
+            }
+        }
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+    &__nav {
+        flex-grow: 1;
+        @media (max-width: $md) {
+            background: $color-gray-1;
+            width: 100%;
+            max-height: calc(100vh - 70px);
+            padding: 30px var(--gap-container);
+            position: absolute;
+            top: 100%;
+            left: 0;
+            overflow-y: auto;
+            transition: all .4s;
+            transition-property: transform, opacity, visibility;
+            z-index: 1;
+        }
+        &:not(.is-show) {
+            @media (max-width: $md) {
+                transform: translateX(-100%);
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    }
+    &__btn-toggle {
+        @extend .btn-reset, .area-click;
+        background: transparent;
+        width: 24px;
+        height: 24px;
+        margin: 0 0 0 auto;
+        display: none;
+        color: $color-accent-1;
+        position: relative;
+        transition: all .4s;
+        transition-property: color, transform;
+        cursor: pointer;
+        @extend .btn-reset;
+        &:hover {
+            @media (min-width: $lg-mf) {
+                color: $color-gray-2;
+            }
+        }
+        span {
+            background: currentColor;
+            width: 24px;
+            height: 2px;
+            margin: -1px 0 0 -12px;
+            border-radius: 1px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transition: all .4s;
+            transition-property: opacity, visibility, transform;
+            &:nth-child(1) {
+                transform: translateY(-6px);
+            }
+            &:nth-child(2) {
+                transform: translateY(0);
+            }
+            &:nth-child(3) {
+                transform: translateY(6px);
+            }
+        }
+        &.is-active span:nth-child(1) {
+            transform: rotate(45deg);
+        }
+        &.is-active span:nth-child(2) {
+            transform: translateX(100%);
+            opacity: 0;
+            visibility: hidden;
+        }
+        &.is-active span:nth-child(3) {
+            transform: rotate(-45deg);
+        }
+        @media (max-width: $md) {
+            display: block;
+        }
+    }
+}

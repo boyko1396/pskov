@@ -1,0 +1,43 @@
+header.header
+  .container.header__container
+    a.header__logo(href='/')
+      img(src='./images/logo-accent.svg', alt='Россети Северо-Запад Псковэнергоагент')
+    nav.nav.header__nav(role='navigation')
+      ul.nav__list
+        li.nav__item
+          a.nav__link(href='#') О компании
+          ul.nav-dropdown.nav__sub
+            li.nav-dropdown__item
+              a.nav-dropdown__link(href="#") Контакты и реквизиты
+            li.nav-dropdown__item
+              a.nav-dropdown__link(href="#") Вакансии
+            li.nav-dropdown__item
+              a.nav-dropdown__link(href="#") Новости
+            li.nav-dropdown__item
+              a.nav-dropdown__link(href="#") Важная информация
+            li.nav-dropdown__item
+              a.nav-dropdown__link(href="#") Акционерам и инвесторам
+        li.nav__item
+          a.nav__link(href='#') Электроэнергия
+        li.nav__item
+          a.nav__link(href='#') Услуги
+          ul.nav-dropdown.nav__sub
+            li.nav-dropdown__item
+              a.nav-dropdown__link(href="#") Юридическим лицам
+            li.nav-dropdown__item
+              a.nav-dropdown__link(href="#") Физическим лицам
+        li.nav__item
+          a.nav__link(href='#') Закупки
+          ul.nav-dropdown.nav__sub
+            li.nav-dropdown__item
+              a.nav-dropdown__link(href="#") Сведения о заключенных договорах
+            li.nav-dropdown__item
+              a.nav-dropdown__link(href="#") Управление закупочной деятельностью
+            li.nav-dropdown__item
+              a.nav-dropdown__link(href="#") Сведения о применяемых электронных площадках
+            li.nav-dropdown__item
+              a.nav-dropdown__link(href="#") Извещения о проведении закупок
+    button(type="button").js-nav-mobile-toggle.header__btn-toggle
+      span
+      span
+      span

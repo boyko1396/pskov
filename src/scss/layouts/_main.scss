@@ -1,0 +1,6 @@
+.main {
+    padding: 0 0 50px;
+    @media (max-width: $sm) {
+    	padding-bottom: 30px;
+    }
+}

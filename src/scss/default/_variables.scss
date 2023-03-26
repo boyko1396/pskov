@@ -1,0 +1,34 @@
+// typography
+$ff-default: 'Montserrat', Arial, sans-serif;
+
+// pallets
+$color-black-1: #303030;
+$color-white-1: #fff;
+$color-accent-1: #005CA2;
+$color-accent-2: #004881;
+$color-accent-3: #002B4D;
+$color-accent-4: #002D61;
+$color-gray-1: #FBFBFB;
+$color-gray-2: #D2D3D5;
+$color-gray-3: #838383;
+$color-red-1: #E0223E;
+$color-pink-1: #DB8DFF;
+$color-bluelight-1: #7AAEEC;
+
+$gradient-accent-1: linear-gradient(180deg,$color-accent-1 -37%,$color-accent-2 140%);
+
+// media breakpoints
+$xl: 1440px;
+$xl-mf: $xl + 1;
+
+$lg: 1199px;
+$lg-mf: $lg + 1;
+
+$md: 991px;
+$md-mf: $md + 1;
+
+$sm: 767px;
+$sm-mf: $sm + 1;
+
+$xs: 576px;
+$xs-mf: $xs;

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+html(lang='ru')
+  include includes/head.pug
+
+  body
+
+    #root
+      include includes/header.pug
+
+      main.main(role='main')
+        section.main-slider
+          .container.main-slider__container
+            .js-main-slider-init.main-slider__el
+              .main-slider__slide
+                .row.main-slider__row
+                  .row__col-6.main-slider__col-content
+                    .main-slider__content
+                      h2.title-size-1.main-slider__title Выбирайте услугу — решим проблему
+                      a.btn.btn--theme-white.btn--size-md.main-slider__btn(href='#')
+                        span.btn__inner
+                          span.btn__title Перейти в услуги
+                  .row__col-6.main-slider__col-picture
+                    picture.main-slider__picture
+                      source(srcset='images/main-slider-img-1.webp 1x, images/main-slider-img-1@2x.webp 2x' type='image/webp')
+                      source(srcset='images/main-slider-img-1.png 1x, images/main-slider-img-1@2x.png 2x')
+                      img(src='images/main-slider-img-1.png' loading='lazy' width='' height='' alt='Выбирайте услугу — решим проблему')
+              .main-slider__slide
+                .row.main-slider__row
+                  .row__col-6.main-slider__col-content
+                    .main-slider__content
+                      h2.title-size-1.main-slider__title 2Выбирайте услугу — решим проблему
+                      a.btn.btn--theme-white.btn--size-md.main-slider__btn(href='#')
+                        span.btn__inner
+                          span.btn__title Перейти в услуги
+                  .row__col-6.main-slider__col-picture
+                    picture.main-slider__picture
+                      source(srcset='images/main-slider-img-1.webp 1x, images/main-slider-img-1@2x.webp 2x' type='image/webp')
+                      source(srcset='images/main-slider-img-1.png 1x, images/main-slider-img-1@2x.png 2x')
+                      img(src='images/main-slider-img-1.png' loading='lazy' width='' height='' alt='Выбирайте услугу — решим проблему')
+              .main-slider__slide
+                .row.main-slider__row
+                  .row__col-6.main-slider__col-content
+                    .main-slider__content
+                      h2.title-size-1.main-slider__title 3Выбирайте услугу — решим проблему
+                      a.btn.btn--theme-white.btn--size-md.main-slider__btn(href='#')
+                        span.btn__inner
+                          span.btn__title Перейти в услуги
+                  .row__col-6.main-slider__col-picture
+                    picture.main-slider__picture
+                      source(srcset='images/main-slider-img-1.webp 1x, images/main-slider-img-1@2x.webp 2x' type='image/webp')
+                      source(srcset='images/main-slider-img-1.png 1x, images/main-slider-img-1@2x.png 2x')
+                      img(src='images/main-slider-img-1.png' loading='lazy' width='' height='' alt='Выбирайте услугу — решим проблему')
+              .main-slider__slide
+                .row.main-slider__row
+                  .row__col-6.main-slider__col-content
+                    .main-slider__content
+                      h2.title-size-1.main-slider__title 4Выбирайте услугу — решим проблему
+                      a.btn.btn--theme-white.btn--size-md.main-slider__btn(href='#')
+                        span.btn__inner
+                          span.btn__title Перейти в услуги
+                  .row__col-6.main-slider__col-picture
+                    picture.main-slider__picture
+                      source(srcset='images/main-slider-img-1.webp 1x, images/main-slider-img-1@2x.webp 2x' type='image/webp')
+                      source(srcset='images/main-slider-img-1.png 1x, images/main-slider-img-1@2x.png 2x')
+                      img(src='images/main-slider-img-1.png' loading='lazy' width='' height='' alt='Выбирайте услугу — решим проблему')
+              .main-slider__slide
+                .row.main-slider__row
+                  .row__col-6.main-slider__col-content
+                    .main-slider__content
+                      h2.title-size-1.main-slider__title 5Выбирайте услугу — решим проблему
+                      a.btn.btn--theme-white.btn--size-md.main-slider__btn(href='#')
+                        span.btn__inner
+                          span.btn__title Перейти в услуги
+                  .row__col-6.main-slider__col-picture
+                    picture.main-slider__picture
+                      source(srcset='images/main-slider-img-1.webp 1x, images/main-slider-img-1@2x.webp 2x' type='image/webp')
+                      source(srcset='images/main-slider-img-1.png 1x, images/main-slider-img-1@2x.png 2x')
+                      img(src='images/main-slider-img-1.png' loading='lazy' width='' height='' alt='Выбирайте услугу — решим проблему')
+        section.section
+          .container.section__container
+            header.section__header
+              h2.title-size-2.section__title Услуги физическим лицам
+            .row.section__row-services
+              .row__col-4.section__col-services
+                article.services-card.section__services-card
+                  picture.services-card__picture
+                    img(src='images/services-card-1.svg' alt='Подготовка документов')
+                  .services-card__content
+                    a.services-card__link(href='#') Подготовка документов
+              .row__col-4.section__col-services
+                article.services-card.section__services-card
+                  picture.services-card__picture
+                    img(src='images/services-card-2.svg' alt='Проверка счетчиков тепла')
+                  .services-card__content
+                    a.services-card__link(href='#') Проверка счетчиков тепла
+              .row__col-4.section__col-services
+                article.services-card.section__services-card
+                  picture.services-card__picture
+                    img(src='images/services-card-3.svg' alt='Электротехнические услуги')
+                  .services-card__content
+                    a.services-card__link(href='#') Электротехнические услуги
+            footer.section__footer
+              a.btn.btn--theme-accent.btn--size-md.btn--reverse-theme-sm.section__footer-btn(href='#') Больше услуг
+        section.section
+          .container.section__container
+            .row.section__row-services-second
+              .row__col-8.section__col-services-second
+                header.section__header
+                  h2.title-size-2.section__title Услуги юридическим лицам
+                .row.section__row-services
+                  .row__col-6.section__col-services
+                    article.services-card.section__services-card
+                      picture.services-card__picture
+                        img(src='images/services-card-4.svg' alt='Проверка счетчиков воды')
+                      .services-card__content
+                        a.services-card__link(href='#') Проверка счетчиков воды
+                  .row__col-6.section__col-services
+                    article.services-card.section__services-card
+                      picture.services-card__picture
+                        img(src='images/services-card-5.svg' alt='Рекламно-информационные услуги')
+                      .services-card__content
+                        a.services-card__link(href='#') Рекламно-информационные услуги
+                footer.section__footer
+                  a.btn.btn--theme-accent.btn--size-md.btn--reverse-theme-sm.section__footer-btn(href='#') Больше услуг
+              .row__col-4.section__col-news
+                header.section__header
+                  h2.title-size-2.section__title Новости
+                .news-block.section__news-list
+                  ul.news-block__list
+                    li.news-block__item
+                      article.news-line-card.news-block__line
+                        .news-line-card__inner
+                          .news-line-card__content
+                            a.news-line-card__link(href='#') Вакансия водителя совмещением обязанностей электромонтёра
+                          svg.news-line-card__icon
+                            use(xlink:href="images/sprite.svg#arrow-1")
+                    li.news-block__item
+                      article.news-line-card.news-block__line
+                        .news-line-card__inner
+                          .news-line-card__content
+                            a.news-line-card__link(href='#') Вакансия электромонтера
+                          svg.news-line-card__icon
+                            use(xlink:href="images/sprite.svg#arrow-1")
+                    li.news-block__item
+                      article.news-line-card.news-block__line
+                        .news-line-card__inner
+                          .news-line-card__content
+                            a.news-line-card__link(href='#') Актуальные вакансии на сентябрь 2022 г.
+                          svg.news-line-card__icon
+                            use(xlink:href="images/sprite.svg#arrow-1")
+                    li.news-block__item
+                      article.news-line-card.news-block__line
+                        .news-line-card__inner
+                          .news-line-card__content
+                            a.news-line-card__link(href='#') Услуги для граждан и организаций
+                          svg.news-line-card__icon
+                            use(xlink:href="images/sprite.svg#arrow-1")
+                footer.section__footer
+                  a.btn.btn--theme-accent.btn--size-md.section__footer-btn(href='#') Больше новостей
+
+      include includes/footer.pug
+
+    include includes/foot.pug

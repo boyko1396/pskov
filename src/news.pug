@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+html(lang='ru')
+  include includes/head.pug
+
+  body
+
+    #root
+      include includes/header.pug
+
+      main.main(role='main')
+        section.news-section
+          .container.news-section__container
+            .row.news-section__row
+              .row__col-3.news-section__col-aside
+                aside.aside-page.news-section__aside
+                  nav.aside-page__nav
+                    ul.aside-page__list
+                      li.aside-page__item
+                        a.aside-page__link(href="#") О компании
+                        ul.aside-page__sub
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Контакты и реквизиты
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Вакансии
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link.is-active(href="#") Новости
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Важная информация
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Акционерам и инвесторам
+                      li.aside-page__item
+                        a.aside-page__link(href="#") Услуги
+                      li.aside-page__item
+                        a.aside-page__link(href="#") Электроэнергия
+                      li.aside-page__item
+                        a.aside-page__link(href="#") Закупки
+              .row__col-9.news-section__col-main
+                .news-section__main
+                  h1.news-section__main-title Новости
+                  .news-section__main-list
+                    article.news-tile.news-section__main-list-item
+                      .news-tile__inner
+                        h3.news-tile__title
+                          a.news-tile__link(href="#") Вакансия водителя совмещением обязанностей электромонтёра
+                        .content.news-tile__description
+                          p АО «Псковэнергоагент» приглашает на работу водителя с совмещением обязанностей электромонтёра. Вакансия актуальна в следующих населенных пунктах: Псков, Великие Луки, Бежаницы, Красногородск, Локня, Остров, Палкино, Печоры, Плюсса, Порхов. Наше предложение: работа в крупной развивающейся компании, оформление по ТК РФ, все социальные гарантии, возможность карьерного роста, заработная плата от 20 000...
+                        footer.news-tile__footer
+                          a.btn.btn--theme-accent.btn--size-md.news-tile__footer-btn(href='#') Читать дальше
+                    article.news-tile.news-section__main-list-item
+                      .news-tile__inner
+                        h3.news-tile__title
+                          a.news-tile__link(href="#") Вакансия водителя совмещением обязанностей электромонтёра
+                        .content.news-tile__description
+                          p АО «Псковэнергоагент» приглашает на работу водителя с совмещением обязанностей электромонтёра. Вакансия актуальна в следующих населенных пунктах: Псков, Великие Луки, Бежаницы, Красногородск, Локня, Остров, Палкино, Печоры, Плюсса, Порхов. Наше предложение: работа в крупной развивающейся компании, оформление по ТК РФ, все социальные гарантии, возможность карьерного роста, заработная плата от 20 000...
+                        footer.news-tile__footer
+                          a.btn.btn--theme-accent.btn--size-md.news-tile__footer-btn(href='#') Читать дальше
+                    article.news-tile.news-section__main-list-item
+                      .news-tile__inner
+                        h3.news-tile__title
+                          a.news-tile__link(href="#") Вакансия водителя совмещением обязанностей электромонтёра
+                        .content.news-tile__description
+                          p АО «Псковэнергоагент» приглашает на работу водителя с совмещением обязанностей электромонтёра. Вакансия актуальна в следующих населенных пунктах: Псков, Великие Луки, Бежаницы, Красногородск, Локня, Остров, Палкино, Печоры, Плюсса, Порхов. Наше предложение: работа в крупной развивающейся компании, оформление по ТК РФ, все социальные гарантии, возможность карьерного роста, заработная плата от 20 000...
+                        footer.news-tile__footer
+                          a.btn.btn--theme-accent.btn--size-md.news-tile__footer-btn(href='#') Читать дальше
+                    article.news-tile.news-section__main-list-item
+                      .news-tile__inner
+                        h3.news-tile__title
+                          a.news-tile__link(href="#") Вакансия водителя совмещением обязанностей электромонтёра
+                        .content.news-tile__description
+                          p АО «Псковэнергоагент» приглашает на работу водителя с совмещением обязанностей электромонтёра. Вакансия актуальна в следующих населенных пунктах: Псков, Великие Луки, Бежаницы, Красногородск, Локня, Остров, Палкино, Печоры, Плюсса, Порхов. Наше предложение: работа в крупной развивающейся компании, оформление по ТК РФ, все социальные гарантии, возможность карьерного роста, заработная плата от 20 000...
+                        footer.news-tile__footer
+                          a.btn.btn--theme-accent.btn--size-md.news-tile__footer-btn(href='#') Читать дальше
+
+      include includes/footer.pug
+
+    include includes/foot.pug

@@ -1,0 +1,20 @@
+footer.footer
+  .container.footer__container
+    .row.footer__row
+      .row__col-12.footer__col-search
+        form.search-form.footer__search(action='#')
+          input.u-input.u-input--theme-white.u-input--size-sm.search-form__input(type='search', required='', placeholder='Поиск')
+          button(type='submit').search-form__btn
+            svg.search-form__btn-icon
+              use(xlink:href="images/sprite.svg#search")
+      .row__col-4.footer__col-address
+        .footer__address
+          | АО "Псковэнергоагент"<br>180006, г. Псков, ул. Старотекстильная, д. 32<br><a href="mailto:office@pskovenergoagent.ru" target="_blank">office@pskovenergoagent.ru</a>
+        p.footer__copyright © 2022 Все права защищены
+      .row__col-4.footer__col-logo
+        a.footer__logo(href='/')
+          img(src='images/logo-white.svg', alt='Россети Северо-Запад Псковэнергоагент')
+      .row__col-4.footer__col-contacts
+        a.u-phone.footer__phone(href='tel:+78002340506') +7 (800) 234 05 06
+        .footer__time
+          | пн - чт: с 8:00 до 17:00<br>пт: с 8:00 до 16:00
