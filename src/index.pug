@@ -90,9 +90,9 @@ html(lang='ru')
               .row__col-4.section__col-services
                 article.services-card.section__services-card
                   picture.services-card__picture
-                    img(src='images/services-card-2.svg' alt='Проверка счетчиков тепла')
+                    img(src='images/services-card-2.svg' alt='проверка счетчиков тепла')
                   .services-card__content
-                    a.services-card__link(href='#') Проверка счетчиков тепла
+                    a.services-card__link(href='#') проверка счетчиков тепла
               .row__col-4.section__col-services
                 article.services-card.section__services-card
                   picture.services-card__picture
@@ -100,7 +100,9 @@ html(lang='ru')
                   .services-card__content
                     a.services-card__link(href='#') Электротехнические услуги
             footer.section__footer
-              a.btn.btn--theme-accent.btn--size-md.btn--reverse-theme-sm.section__footer-btn(href='#') Больше услуг
+              a.btn.btn--theme-accent.btn--size-md.btn--reverse-theme-sm.section__footer-btn(href='#')
+                span.btn__inner
+                  span.btn__titlte Больше услуг
         section.section
           .container.section__container
             .row.section__row-services-second
@@ -111,9 +113,9 @@ html(lang='ru')
                   .row__col-6.section__col-services
                     article.services-card.section__services-card
                       picture.services-card__picture
-                        img(src='images/services-card-4.svg' alt='Проверка счетчиков воды')
+                        img(src='images/services-card-4.svg' alt='проверка счетчиков воды')
                       .services-card__content
-                        a.services-card__link(href='#') Проверка счетчиков воды
+                        a.services-card__link(href='#') проверка счетчиков воды
                   .row__col-6.section__col-services
                     article.services-card.section__services-card
                       picture.services-card__picture
@@ -121,7 +123,9 @@ html(lang='ru')
                       .services-card__content
                         a.services-card__link(href='#') Рекламно-информационные услуги
                 footer.section__footer
-                  a.btn.btn--theme-accent.btn--size-md.btn--reverse-theme-sm.section__footer-btn(href='#') Больше услуг
+                  a.btn.btn--theme-accent.btn--size-md.btn--reverse-theme-sm.section__footer-btn(href='#')
+                    span.btn__inner
+                      span.btn__titlte Больше услуг
               .row__col-4.section__col-news
                 header.section__header
                   h2.title-size-2.section__title Новости
@@ -156,7 +160,9 @@ html(lang='ru')
                           svg.news-line-card__icon
                             use(xlink:href="images/sprite.svg#arrow-1")
                 footer.section__footer
-                  a.btn.btn--theme-accent.btn--size-md.section__footer-btn(href='#') Больше новостей
+                  a.btn.btn--theme-accent.btn--size-md.section__footer-btn(href='#')
+                    span.btn__inner
+                      span.btn__titlte Больше новостей
 
       include includes/footer.pug
 

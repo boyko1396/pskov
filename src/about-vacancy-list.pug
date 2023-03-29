@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+html(lang='ru')
+  include includes/head.pug
+
+  body
+
+    #root
+      include includes/header.pug
+
+      main.main(role='main')
+        section.typical-section
+          .container.typical-section__container
+            .row.typical-section__row
+              .row__col-3.typical-section__col-aside
+                aside.aside-page.typical-section__aside
+                  nav.aside-page__nav
+                    ul.aside-page__list
+                      li.aside-page__item
+                        a.js-aside-nav-link-toggle.aside-page__link.is-active(href="#") О компании
+                        ul.aside-page__sub.is-show
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Контакты и реквизиты
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Вакансии
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#").is-active Новости
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Важная информация
+                          li.aside-page__sub-item
+                            a.js-aside-nav-link-toggle.aside-page__sub-link(href="#") Акционерам и инвесторам
+                            ul.aside-page__sub-second
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Структура акционерного капитала
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Устав
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Решения Совета директоров
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Информация о собраниях акционеров
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Информация об аудиторе
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Финансовая отчетность
+                      li.aside-page__item
+                        a.aside-page__link(href="#") Услуги
+                        ul.aside-page__sub
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Юридическим лицам
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Физическим лицам
+                      li.aside-page__item
+                        a.aside-page__link(href="#") Электроэнергия
+                      li.aside-page__item
+                        a.js-aside-nav-link-toggle.aside-page__link(href="#") Закупки
+                        ul.aside-page__sub
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Сведения о заключенных договорах
+                          li.aside-page__sub-item
+                            a.js-aside-nav-link-toggle.aside-page__sub-link(href="#") Управление закупочной деятельностью
+                            ul.aside-page__sub-second
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Положение и приложения
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Субъекты малого и среднего предпринимательства
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") План закупки 2020
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") План закупки 2021
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") План закупки 2022
+                          li.aside-page__sub-item
+                            a.js-aside-nav-link-toggle.aside-page__sub-link(href="#") Извещения о проведении закупок
+                            ul.aside-page__sub-second
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") 2020
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") 2021
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") 2022
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") 2023
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Сведения о применяемых электронных площадках
+              .row__col-9.typical-section__col-main
+                .typical-section__main
+                  h1.typical-section__main-title Работа в компании
+                  form(action="#").typical-section__filter
+                    .box-tile.typical-section__filter-box
+                      .box-tile__inner
+                        .box-tile__filter
+                          .box-tile__filter-list
+                            .u-filter-select.box-tile__filter-list-card
+                              header.u-filter-select__header
+                                button(type="button").js-filter-collapse.u-filter-select__header-button Отдел
+                                .u-filter-select__header-carret
+                                  svg.u-filter-select__header-icon
+                                    use(xlink:href="images/sprite.svg#arrow-2")
+                              .u-filter-select__dropdown
+                                ul.u-filter-select__dropdown-list
+                                  li.u-filter-select__dropdown-list-item
+                                    label.u-select-radio.u-filter-select__dropdown-list-card
+                                      span.u-select-radio__inner
+                                        input(type="checkbox" name="filter-select-group-1" value="Выбрать").u-select-radio__control
+                                        span.u-select-radio__content
+                                          span.u-select-radio__icon
+                                          span.u-select-radio__title Выбрать
+                                  li.u-filter-select__dropdown-list-item
+                                    label.u-select-radio.u-filter-select__dropdown-list-card
+                                      span.u-select-radio__inner
+                                        input(type="checkbox" name="filter-select-group-1" value="Выбрать 1").u-select-radio__control
+                                        span.u-select-radio__content
+                                          span.u-select-radio__icon
+                                          span.u-select-radio__title Выбрать 1
+                            .u-filter-select.box-tile__filter-list-card
+                              header.u-filter-select__header
+                                button(type="button").js-filter-collapse.u-filter-select__header-button Образование
+                                .u-filter-select__header-carret
+                                  svg.u-filter-select__header-icon
+                                    use(xlink:href="images/sprite.svg#arrow-2")
+                              .u-filter-select__dropdown
+                                ul.u-filter-select__dropdown-list
+                                  li.u-filter-select__dropdown-list-item
+                                    label.u-select-radio.u-filter-select__dropdown-list-card
+                                      span.u-select-radio__inner
+                                        input(type="checkbox" name="filter-select-group-2" value="Выбрать").u-select-radio__control
+                                        span.u-select-radio__content
+                                          span.u-select-radio__icon
+                                          span.u-select-radio__title Выбрать
+                                  li.u-filter-select__dropdown-list-item
+                                    label.u-select-radio.u-filter-select__dropdown-list-card
+                                      span.u-select-radio__inner
+                                        input(type="checkbox" name="filter-select-group-2" value="Выбрать 1").u-select-radio__control
+                                        span.u-select-radio__content
+                                          span.u-select-radio__icon
+                                          span.u-select-radio__title Выбрать 1
+                            .u-filter-select.box-tile__filter-list-card
+                              header.u-filter-select__header
+                                button(type="button").js-filter-collapse.u-filter-select__header-button Город
+                                .u-filter-select__header-carret
+                                  svg.u-filter-select__header-icon
+                                    use(xlink:href="images/sprite.svg#arrow-2")
+                              .u-filter-select__dropdown
+                                ul.u-filter-select__dropdown-list
+                                  li.u-filter-select__dropdown-list-item
+                                    label.u-select-radio.u-filter-select__dropdown-list-card
+                                      span.u-select-radio__inner
+                                        input(type="checkbox" name="filter-select-group-3" value="Москва").u-select-radio__control
+                                        span.u-select-radio__content
+                                          span.u-select-radio__icon
+                                          span.u-select-radio__title Москва
+                                  li.u-filter-select__dropdown-list-item
+                                    label.u-select-radio.u-filter-select__dropdown-list-card
+                                      span.u-select-radio__inner
+                                        input(type="checkbox" name="filter-select-group-3" value="Тула").u-select-radio__control
+                                        span.u-select-radio__content
+                                          span.u-select-radio__icon
+                                          span.u-select-radio__title Тула
+                                  li.u-filter-select__dropdown-list-item
+                                    label.u-select-radio.u-filter-select__dropdown-list-card
+                                      span.u-select-radio__inner
+                                        input(type="checkbox" name="filter-select-group-3" value="Псков").u-select-radio__control
+                                        span.u-select-radio__content
+                                          span.u-select-radio__icon
+                                          span.u-select-radio__title Псков
+                                  li.u-filter-select__dropdown-list-item
+                                    label.u-select-radio.u-filter-select__dropdown-list-card
+                                      span.u-select-radio__inner
+                                        input(type="checkbox" name="filter-select-group-3" value="Псков").u-select-radio__control
+                                        span.u-select-radio__content
+                                          span.u-select-radio__icon
+                                          span.u-select-radio__title Псков
+                                  li.u-filter-select__dropdown-list-item
+                                    label.u-select-radio.u-filter-select__dropdown-list-card
+                                      span.u-select-radio__inner
+                                        input(type="checkbox" name="filter-select-group-3" value="Псков").u-select-radio__control
+                                        span.u-select-radio__content
+                                          span.u-select-radio__icon
+                                          span.u-select-radio__title Псков
+                                  li.u-filter-select__dropdown-list-item
+                                    label.u-select-radio.u-filter-select__dropdown-list-card
+                                      span.u-select-radio__inner
+                                        input(type="checkbox" name="filter-select-group-3" value="Псков").u-select-radio__control
+                                        span.u-select-radio__content
+                                          span.u-select-radio__icon
+                                          span.u-select-radio__title Псков
+                                  li.u-filter-select__dropdown-list-item
+                                    label.u-select-radio.u-filter-select__dropdown-list-card
+                                      span.u-select-radio__inner
+                                        input(type="checkbox" name="filter-select-group-3" value="Псков").u-select-radio__control
+                                        span.u-select-radio__content
+                                          span.u-select-radio__icon
+                                          span.u-select-radio__title Псков
+                                  li.u-filter-select__dropdown-list-item
+                                    label.u-select-radio.u-filter-select__dropdown-list-card
+                                      span.u-select-radio__inner
+                                        input(type="checkbox" name="filter-select-group-3" value="Псков").u-select-radio__control
+                                        span.u-select-radio__content
+                                          span.u-select-radio__icon
+                                          span.u-select-radio__title Псков
+                                  li.u-filter-select__dropdown-list-item
+                                    label.u-select-radio.u-filter-select__dropdown-list-card
+                                      span.u-select-radio__inner
+                                        input(type="checkbox" name="filter-select-group-3" value="Псков").u-select-radio__control
+                                        span.u-select-radio__content
+                                          span.u-select-radio__icon
+                                          span.u-select-radio__title Псков
+                                  li.u-filter-select__dropdown-list-item
+                                    label.u-select-radio.u-filter-select__dropdown-list-card
+                                      span.u-select-radio__inner
+                                        input(type="checkbox" name="filter-select-group-3" value="Псков").u-select-radio__control
+                                        span.u-select-radio__content
+                                          span.u-select-radio__icon
+                                          span.u-select-radio__title Псков
+                                  li.u-filter-select__dropdown-list-item
+                                    label.u-select-radio.u-filter-select__dropdown-list-card
+                                      span.u-select-radio__inner
+                                        input(type="checkbox" name="filter-select-group-3" value="Псков").u-select-radio__control
+                                        span.u-select-radio__content
+                                          span.u-select-radio__icon
+                                          span.u-select-radio__title Псков
+                                  li.u-filter-select__dropdown-list-item
+                                    label.u-select-radio.u-filter-select__dropdown-list-card
+                                      span.u-select-radio__inner
+                                        input(type="checkbox" name="filter-select-group-3" value="Псков").u-select-radio__control
+                                        span.u-select-radio__content
+                                          span.u-select-radio__icon
+                                          span.u-select-radio__title Псков
+                    footer.typical-section__filter-footer
+                      button(type="reset").btn.btn--theme-white.btn--size-md.typical-section__filter-footer-btn
+                        span.btn__inner
+                          span.btn__titlte Сбросить
+                      button(type="submit").btn.btn--theme-accent.btn--size-md.typical-section__filter-footer-btn
+                        span.btn__inner
+                          span.btn__titlte Поиск
+                  .typical-section__news-list
+                    article.news-tile.typical-section__news-item
+                      .news-tile__inner
+                        header.news-tile__header
+                          h3.news-tile__title
+                            a.news-tile__link(href="#") Юрисконсульт
+                          a.btn.btn--theme-white.btn--size-md.news-tile__city(href='#')
+                            span.btn__inner
+                              span.btn__titlte Псков
+                        .content.news-tile__description
+                          p Представление интересов во всех государственных, общественных, коммерческих и некоммерческих организациях, предприятиях, учреждениях, органах государственной власти. Представительство в судах общей юрисдикции... Высшее юридическое образование. Знания трудового, гражданского, административного, процессуального законодательства. Уверенный пользователь ПК. Грамотная письменная и устная речь. Высокий уровень самоорганизации.
+                        footer.news-tile__footer
+                          p.news-tile__footer-salary От 30 000р
+                          a.btn.btn--theme-accent.btn--size-md.news-tile__footer-btn(href='#')
+                            span.btn__inner
+                              span.btn__titlte Подробнее
+                    article.news-tile.typical-section__news-item
+                      .news-tile__inner
+                        header.news-tile__header
+                          h3.news-tile__title
+                            a.news-tile__link(href="#") Юрисконсульт
+                          a.btn.btn--theme-white.btn--size-md.news-tile__city(href='#')
+                            span.btn__inner
+                              span.btn__titlte Псков
+                        .content.news-tile__description
+                          p Представление интересов во всех государственных, общественных, коммерческих и некоммерческих организациях, предприятиях, учреждениях, органах государственной власти. Представительство в судах общей юрисдикции... Высшее юридическое образование. Знания трудового, гражданского, административного, процессуального законодательства. Уверенный пользователь ПК. Грамотная письменная и устная речь. Высокий уровень самоорганизации.
+                        footer.news-tile__footer
+                          p.news-tile__footer-salary От 30 000р
+                          a.btn.btn--theme-accent.btn--size-md.news-tile__footer-btn(href='#')
+                            span.btn__inner
+                              span.btn__titlte Подробнее
+                    article.news-tile.typical-section__news-item
+                      .news-tile__inner
+                        header.news-tile__header
+                          h3.news-tile__title
+                            a.news-tile__link(href="#") Юрисконсульт
+                          a.btn.btn--theme-white.btn--size-md.news-tile__city(href='#')
+                            span.btn__inner
+                              span.btn__titlte Псков
+                        .content.news-tile__description
+                          p Представление интересов во всех государственных, общественных, коммерческих и некоммерческих организациях, предприятиях, учреждениях, органах государственной власти. Представительство в судах общей юрисдикции... Высшее юридическое образование. Знания трудового, гражданского, административного, процессуального законодательства. Уверенный пользователь ПК. Грамотная письменная и устная речь. Высокий уровень самоорганизации.
+                        footer.news-tile__footer
+                          p.news-tile__footer-salary От 30 000р
+                          a.btn.btn--theme-accent.btn--size-md.news-tile__footer-btn(href='#')
+                            span.btn__inner
+                              span.btn__titlte Подробнее
+
+      include includes/footer.pug
+
+    include includes/foot.pug

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+html(lang='ru')
+  include includes/head.pug
+
+  body
+
+    #root
+      include includes/header.pug
+
+      main.main(role='main')
+        section.typical-section
+          .container.typical-section__container
+            .row.typical-section__row
+              .row__col-3.typical-section__col-aside
+                aside.aside-page.typical-section__aside
+                  nav.aside-page__nav
+                    ul.aside-page__list
+                      li.aside-page__item
+                        a.js-aside-nav-link-toggle.aside-page__link.is-active(href="#") О компании
+                        ul.aside-page__sub.is-show
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Контакты и реквизиты
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Вакансии
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#").is-active Новости
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Важная информация
+                          li.aside-page__sub-item
+                            a.js-aside-nav-link-toggle.aside-page__sub-link(href="#") Акционерам и инвесторам
+                            ul.aside-page__sub-second
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Структура акционерного капитала
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Устав
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Решения Совета директоров
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Информация о собраниях акционеров
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Информация об аудиторе
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Финансовая отчетность
+                      li.aside-page__item
+                        a.aside-page__link(href="#") Услуги
+                        ul.aside-page__sub
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Юридическим лицам
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Физическим лицам
+                      li.aside-page__item
+                        a.aside-page__link(href="#") Электроэнергия
+                      li.aside-page__item
+                        a.js-aside-nav-link-toggle.aside-page__link(href="#") Закупки
+                        ul.aside-page__sub
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Сведения о заключенных договорах
+                          li.aside-page__sub-item
+                            a.js-aside-nav-link-toggle.aside-page__sub-link(href="#") Управление закупочной деятельностью
+                            ul.aside-page__sub-second
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Положение и приложения
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Субъекты малого и среднего предпринимательства
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") План закупки 2020
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") План закупки 2021
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") План закупки 2022
+                          li.aside-page__sub-item
+                            a.js-aside-nav-link-toggle.aside-page__sub-link(href="#") Извещения о проведении закупок
+                            ul.aside-page__sub-second
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") 2020
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") 2021
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") 2022
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") 2023
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Сведения о применяемых электронных площадках
+              .row__col-9.typical-section__col-main
+                .typical-section__main
+                  h1.typical-section__main-title АО «Псковэнергоагент» приглашает на работу водителя с совмещением обязанностей электромонтёра.
+                  .typical-section__box-list
+                    article.box-tile.typical-section__box-item
+                      .box-tile__inner
+                        .content.box-tile__description
+                          p
+                            <strong> Вакансия актуальна в следующих населенных пунктах:</strong><br>Псков, Великие Луки, Бежаницы, Красногородск, Локня, Остров, Палкино, Печоры, Плюсса, Порхов.
+                          p
+                            strong Наше предложение:
+                          ul
+                            li работа в крупной развивающейся компании,
+                            li оформление по ТК РФ, все социальные гарантии,
+                            li возможность карьерного роста,
+                            li заработная плата от 20 000 руб. на руки (в Пскове от 25 000 руб.),
+                            li индексация заработной платы 2 раза в год,
+                            li материальная помощь к отпуску,
+                            li надбавка за выслугу лет (ежемесячно, после 1 года непрерывной работы),
+                            li компенсация (частичная) оплаты израсходованной электроэнергии,
+                            li график работы 5/2 пн-чт с 8:00 до 17:00, пт 8:00-16:00,
+                            li работа в дружном коллективе профессионалов,
+                            li спецодежда, спецобувь и другие средства индивидуальной защиты,
+                            li существует профсоюз, в рамках деятельности которого действует коллективный договор, предоставляющий дополнительные льготы и выплаты сотрудникам.
+
+                          p
+                            strong Обязанности:
+                          ul
+                            li эффективное управление транспортным средством соответствующей категории в различных условиях дорожного движения,
+                            li проверка технического состояния автомобиля перед выездом на линию, содержать автомобиль в исправном состоянии и постоянной эксплуатационной готовности,
+                            li устранение мелких неисправностей в процессе эксплуатации транспортного средства соответствующей категории, не требующие разборки узлов и агрегатов,
+                            li обеспечение безопасной перевозки пассажиров,
+                            li выполнение дополнительной работы электромонтера по эксплуатации электросчетчиков
+
+                          p
+                            strong Наши ожидания:
+                          ul
+                            li образование не ниже среднего специального,
+                            li водительское удостоверение категории В
+                            li водительский стаж от 2-х лет,
+                            li обязательный медицинский осмотр.
+                          p
+                            strong
+                              em Если Вы коммуникабельны, ответственны, внимательны, полны желания трудиться вместе с нами, мы будем рады видеть Вас в нашей команде! Присоединяйтесь!
+
+      include includes/footer.pug
+
+    include includes/foot.pug

@@ -1,0 +1,166 @@
+.typical-section {
+    padding: 40px 0;
+    @media (max-width: $sm) {
+        padding: 20px 0;
+    }
+    &__container {
+    }
+    &__row {
+    }
+    &__col-aside {
+        @media (max-width: $md) {
+            display: none;
+        }
+    }
+    &__col-main {
+        @media (max-width: $md) {
+            max-width: 100%;
+            flex-basis: 100%;
+        }
+    }
+    &__aside {
+    }
+    &__main {
+        & > :last-child {
+            margin-bottom: 0;
+        }
+        &-nav {
+            margin-bottom: calc(2 * var(--gap));
+            @media (max-width: $sm) {
+                margin-right: calc(var(--gap) / -2);
+                margin-left: calc(var(--gap) / -2);
+            }
+            &-col {
+                @media (max-width: $sm) {
+                    padding-right: calc(var(--gap) / 2);
+                    padding-left: calc(var(--gap) / 2);
+                }
+            }
+            &-btn {
+                width: 100%;
+                @media (max-width: $sm) {
+                    font-size: 14px;
+                }
+            }
+        }
+        &-services {
+            margin-bottom: calc(-2 * var(--gap));
+            padding-bottom: calc(2 * var(--gap));
+            @media (max-width: $sm) {
+                margin-bottom: calc(-1 * var(--gap));
+                padding-bottom: var(--gap);
+            }
+            &-col {
+                margin-bottom: calc(2 * var(--gap));
+                @media (max-width: $sm) {
+                    margin-bottom: var(--gap);
+                }
+                &.row__col-4 {
+                    @media (max-width: $sm) {
+                        max-width: 100%;
+                        flex-basis: 100%;
+                    }
+                }
+                &.row__col-6 {
+                    @media (max-width: $sm) {
+                        max-width: 100%;
+                        flex-basis: 100%;
+                    }
+                }
+                &.row__col-12 {
+                    @media (max-width: $sm) {
+                        max-width: 100%;
+                        flex-basis: 100%;
+                    }
+                }
+            }
+            &-card {
+                height: 100%;
+            }
+        }
+    }
+    &__main-title {
+        margin: 0 0 32px;
+        font-weight: 600;
+        font-size: 36px;
+        color: $color-accent-1;
+        @media (max-width: $lg) {
+            font-size: 32px;
+        }
+        @media (max-width: $md) {
+            margin-bottom: 16px;
+        }
+        @media (max-width: $sm) {
+            font-size: 24px;
+            letter-spacing: -.03em;
+        }
+        @media (max-width: $xs) {
+            font-size: 22px;
+        }
+    }
+    &__news-list {
+    }
+    &__news-item {
+        & + & {
+            margin-top: 32px;
+            @media (max-width: $sm) {
+                margin-top: 16px;
+            }
+        }
+    }
+    &__doc-card {
+        & + & {
+            margin-top: 24px;
+        }
+        &-title {
+            margin: 0 0 20px;
+            font-weight: 600;
+            font-size: 20px;
+            @media (max-width: $md) {
+                margin-bottom: 12px;
+                font-size: 18px;
+            }
+        }
+        &-list {
+        }
+        &-item {
+            & + & {
+                margin-top: 16px;
+            }
+        }
+    }
+    &__footer {
+    }
+    &__box-list {
+        margin: 0 0 32px;
+    }
+    &__box-item {
+        & + & {
+            margin-top: 16px;
+        }
+    }
+    &__filter {
+        &-box {
+            margin: 0 0 24px;
+        }
+        &-footer {
+            margin: -8px;
+            padding: 0 0 40px;
+            display: flex;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            &-btn {
+                margin: 8px;
+            }
+        }
+    }
+    &__footer {
+        padding-top: 30px;
+        text-align: right;
+        @media (max-width: $md) {
+            padding-top: 16px;
+        }
+        &-btn {
+        }
+    }
+}

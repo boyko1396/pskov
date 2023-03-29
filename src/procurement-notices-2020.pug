@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+html(lang='ru')
+  include includes/head.pug
+
+  body
+
+    #root
+      include includes/header.pug
+
+      main.main(role='main')
+        section.typical-section
+          .container.typical-section__container
+            .row.typical-section__row
+              .row__col-3.typical-section__col-aside
+                aside.aside-page.typical-section__aside
+                  nav.aside-page__nav
+                    ul.aside-page__list
+                      li.aside-page__item
+                        a.js-aside-nav-link-toggle.aside-page__link(href="#") О компании
+                        ul.aside-page__sub
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Контакты и реквизиты
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Вакансии
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Новости
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Важная информация
+                          li.aside-page__sub-item
+                            a.js-aside-nav-link-toggle.aside-page__sub-link(href="#") Акционерам и инвесторам
+                            ul.aside-page__sub-second
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Структура акционерного капитала
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Устав
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Решения Совета директоров
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Информация о собраниях акционеров
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Информация об аудиторе
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Финансовая отчетность
+                      li.aside-page__item
+                        a.aside-page__link(href="#") Услуги
+                        ul.aside-page__sub
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Юридическим лицам
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Физическим лицам
+                      li.aside-page__item
+                        a.aside-page__link(href="#") Электроэнергия
+                      li.aside-page__item
+                        a.js-aside-nav-link-toggle.aside-page__link.is-active(href="#") Закупки
+                        ul.aside-page__sub.is-show
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Сведения о заключенных договорах
+                          li.aside-page__sub-item
+                            a.js-aside-nav-link-toggle.aside-page__sub-link(href="#") Управление закупочной деятельностью
+                            ul.aside-page__sub-second
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Положение и приложения
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Субъекты малого и среднего предпринимательства
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") План закупки 2020
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") План закупки 2021
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") План закупки 2022
+                          li.aside-page__sub-item
+                            a.js-aside-nav-link-toggle.aside-page__sub-link.is-active(href="#") Извещения о проведении закупок
+                            ul.aside-page__sub-second.is-show
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link.is-active(href="#") 2020
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") 2021
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") 2022
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") 2023
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Сведения о применяемых электронных площадках
+              .row__col-9.typical-section__col-main
+                .typical-section__main
+                  h1.typical-section__main-title Извещения о проведении закупок 2020
+                  .typical-section__doc-list
+                    .typical-section__doc-card
+                      .typical-section__doc-card-list
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Запрос котировок в электронной форме на бланки 2020г
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Запрос котировок в электронной форме на бумагу 2020
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Запрос котировок в электронной форме на ср-ва гигиены 2020г
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Запрос котировок в электронной форме на ср-ва для уборки помещений 2020г
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Запрос котировок масла
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link ЗК запчасти ВАЗ
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link ЗК запчасти ПАЗ ГАЗ
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link ЗК запчасти УАЗ
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Конкурс топливо
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Запрос предложений на спец-обувь 2020
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Запрос преложений уборка помещений 2020г.
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link ЗП спецодежда
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link ЗП ТО офисной техники 2020
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Запрос котировк на пультовую охрану 2020г
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Запрос котировок испытание СИЗ 2020
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Запрос котировок счетчики 1фаз
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Запрос котировок счетчики 3фаз
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link ЗК Microsoft 2019 повторно
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link ЗК ТО средств охраны 2020
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link ЗП Услуги мобильной связи 2020
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 152
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 153
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 154
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 155
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 156
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 164
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 165
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 166
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 167
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 166
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 168
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 169
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 174
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 175
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 176
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Запрос котировок на стр. Заводская 24
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link МЕДОСМОТРЫ на 2020
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 185
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 186
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 187
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 188
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Запрос котировок в электронной форме на бланки 2020 повторно
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Запрос котировок в электронной форме на ср-ва гигиены 2020 повторно
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Запрос котировок в электронной форме на ср-ва для уборки помещений 2020 повторно
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Запрос котировок на бумагу 2020 повторно
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Запрос предложений на спец-обувь 2020-
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Конкурс топливо повторно
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 195
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 210
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 211
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 212
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 213
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 216
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 217
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 218
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 220
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Запрос котировок в электронной форме на канцтовары 2020
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Запрос котировок на мебель 2020
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link ЗК расходных материалов и пер.уст-в 2020
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Запрос котировок ВАФ на 2020
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Запрос котировок ДМС на 2020
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Запрос котировок ПП на 2020
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Запрос котировок счетчики 1фаз
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Запрос котировок счетчики 3фаз
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Запрос котировок шины 2020г
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link ЗК ноутбуки, УСО, адаптеры 2020
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link КД топливо
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link МЕДОСМОТРЫ 2020
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 25
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 32
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 33
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 34
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 35
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 36
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 37
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 40
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Запрос котировок на кондиционеры 2020
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Запрос котировок стенд 2020
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link ЗК Сетевое оборудование 2020
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link ЗК ноутбуки, УСО, адаптеры 2020-2
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 12
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 13
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 14
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 40
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 47
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 49
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 53
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 54
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Запрос котировок стенд 2020 повторно
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Запрос преложений уборка помещений 2020
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 58
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 60
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link ЗК на расходные материалы для уборки помещений 2020
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link ЗК на расходные материалы для уборки помещений 2020
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 66
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link ЗК комплектующие для ремонта ВТ 2020
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Документация ОСАГО ПЭА 2020
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 73
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 76
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link ЗК лицензирование 2020
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link ЗК Ноутбуки, УСО 2020
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 80 подведение итогов ноутбуки_20200828_0001
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 81 подведение итогов лицензирование ПО_20200828_0001
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link ЗК. мобильные телефоны и др. 2020
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол 90
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Запрос Предложений спецобувь
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Запрос Предложений спецодежда
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Извещение о закупке Бланочной продукции
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Извещение о закупке Бумаги для офисной техники
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Извещение о закупке хоз товаров
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Извещение об услуги пультовой охраны.
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Лада Гранта 2020
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Лицензирование ПО 2020
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link ОК
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Системные блоки 2020
+                  footer.typical-section__footer
+                    a.btn.btn--theme-accent.btn--size-md.typical-section__footer-btn(href='#')
+                      span.btn__inner
+                        span.btn__title Архив
+
+      include includes/footer.pug
+
+    include includes/foot.pug

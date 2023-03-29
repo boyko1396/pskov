@@ -1,0 +1,14 @@
+#modal-form.u-modal.u-modal--theme-white.u-modal--size-md
+  .u-modal__container
+    .u-modal__content
+      .title-size-2.u-modal__title Оставить заявку
+      form(action="#").u-modal__form
+        .u-modal__form-line
+          input.u-input.u-input--theme-white-accent.u-input--size-md(type='text' placeholder='ФИО')
+        .u-modal__form-line
+          input.u-input.u-input--theme-white-accent.u-input--size-md(type='tel' required placeholder='Номер телефона')
+        .u-modal__form-line
+          textarea(cols='' rows='').u-input.u-input--textarea.u-input--textarea-size-md.u-input--theme-white-accent.u-input--size-md(placeholder='Образование, опыт работы')
+        button(type="submit").btn.btn--theme-accent.btn--size-md.u-modal__form-btn
+          span.btn__inner
+            span.btn__title Отправить заявку

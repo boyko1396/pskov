@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+html(lang='ru')
+  include includes/head.pug
+
+  body
+
+    #root
+      include includes/header.pug
+
+      main.main(role='main')
+        section.typical-section
+          .container.typical-section__container
+            .row.typical-section__row
+              .row__col-3.typical-section__col-aside
+                aside.aside-page.typical-section__aside
+                  nav.aside-page__nav
+                    ul.aside-page__list
+                      li.aside-page__item
+                        a.js-aside-nav-link-toggle.aside-page__link.is-active(href="#") О компании
+                        ul.aside-page__sub.is-show
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Контакты и реквизиты
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Вакансии
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Новости
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Важная информация
+                          li.aside-page__sub-item
+                            a.js-aside-nav-link-toggle.aside-page__sub-link.is-active(href="#") Акционерам и инвесторам
+                            ul.aside-page__sub-second.is-show
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Структура акционерного капитала
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Устав
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link.is-active(href="#") Решения Совета директоров
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Информация о собраниях акционеров
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Информация об аудиторе
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Финансовая отчетность
+                      li.aside-page__item
+                        a.aside-page__link(href="#") Услуги
+                        ul.aside-page__sub
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Юридическим лицам
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Физическим лицам
+                      li.aside-page__item
+                        a.aside-page__link(href="#") Электроэнергия
+                      li.aside-page__item
+                        a.js-aside-nav-link-toggle.aside-page__link(href="#") Закупки
+                        ul.aside-page__sub
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Сведения о заключенных договорах
+                          li.aside-page__sub-item
+                            a.js-aside-nav-link-toggle.aside-page__sub-link(href="#") Управление закупочной деятельностью
+                            ul.aside-page__sub-second
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Положение и приложения
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Субъекты малого и среднего предпринимательства
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") План закупки 2020
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") План закупки 2021
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") План закупки 2022
+                          li.aside-page__sub-item
+                            a.js-aside-nav-link-toggle.aside-page__sub-link(href="#") Извещения о проведении закупок
+                            ul.aside-page__sub-second
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") 2020
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") 2021
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") 2022
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") 2023
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Сведения о применяемых электронных площадках
+              .row__col-9.typical-section__col-main
+                .typical-section__main
+                  h1.typical-section__main-title Решения совета директоров
+                  .typical-section__doc-list
+                    .typical-section__doc-card
+                      h3.typical-section__doc-card-title 2020
+                      .typical-section__doc-card-list
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол №6 СД Псковэнергоагент 31.01.2020
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол №7 СД Псковэнергоагент 27.02.2020
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол №8 СД Псковэнергоагент 31 03 2020
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол №9 СД Псковэнергоагент 29 04 2020
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол №10 СД Псковэнергоагент 29 05 2020
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол №11 СД Псковэнергоагент 26.06.2020
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол №1 СД Псковэнергоагент 16.07.2020
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол №2 СД Псковэнергоагент 31.08.2020
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол №3 СД Псковэнергоагент 30.09.2020
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол №4 СД Псковэнергоагент 30.10.2020
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол №5 СД Псковэнергоагент 21.12.2020
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол №6 СД Псковэнергоагент 30.12.2020
+                    .typical-section__doc-card
+                      h3.typical-section__doc-card-title 2021
+                      .typical-section__doc-card-list
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол №7 СД Псковэнергоагент 09.02.2021
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол №8 СД Псковэнергоагент 26.02.2021
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол №9 СД Псковэнергоагент 23.04.2021
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол №10 СД Псковэнергоагент 11.05.2021
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол №11 СД Псковэнергоагент 28.05.2021
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол №12 СД Псковэнергоагент 29.06.2021
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол №1 СД Псковэнергоагент 26.07.2021
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол №2 СД Псковэнергоагент 31.08.2021
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол №3 СД Псковэнергоагент 05.10.2021
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол №4 СД Псковэнергоагент 29.10.2021
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол №5 СД Псковэнергоагент 19.11.2021
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол №6 СД Псковэнергоагент 10.12.2021
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол №7 СД Псковэнергоагент 27.12.2021
+                    .typical-section__doc-card
+                      h3.typical-section__doc-card-title 2022
+                      .typical-section__doc-card-list
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол №8 СД Псковэнергоагент 03.02.2022
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол № 9 СД Псковэнергоагент 04.03.2022
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол №10 СД Псковэнергоагент 31.03.2022
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол №11 СД Псковэнергоагент 04.05.2022
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол №12 СД Псковэнергоагент 20.05.2022
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол №13 СД Псковэнергоагент 31.05.2022
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол №14 СД Псковэнергоагент 28.06.2022
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол №1 СД Псковэнергоагент 20.07.2022
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол №2 СД Псковэнергоагент 31.08.2022
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол №3 СД Псковэнергоагент 06.10.2022
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол №4 СД Псковэнергоагент 31.10.2022
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол №5 СД Псковэнергоагент 09.11.2022
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Протокол №6 СД Псковэнергоагент 14.12.2022
+                  footer.typical-section__footer
+                    a.btn.btn--theme-accent.btn--size-md.typical-section__footer-btn(href='#')
+                      span.btn__inner
+                        span.btn__title Архив
+
+      include includes/footer.pug
+
+    include includes/foot.pug

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+html(lang='ru')
+  include includes/head.pug
+
+  body
+
+    #root
+      include includes/header.pug
+
+      main.main(role='main')
+        section.typical-section
+          .container.typical-section__container
+            .row.typical-section__row
+              .row__col-3.typical-section__col-aside
+                aside.aside-page.typical-section__aside
+                  nav.aside-page__nav
+                    ul.aside-page__list
+                      li.aside-page__item
+                        a.js-aside-nav-link-toggle.aside-page__link.is-active(href="#") О компании
+                        ul.aside-page__sub.is-show
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Контакты и реквизиты
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Вакансии
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Новости
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Важная информация
+                          li.aside-page__sub-item
+                            a.js-aside-nav-link-toggle.aside-page__sub-link.is-active(href="#") Акционерам и инвесторам
+                            ul.aside-page__sub-second.is-show
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link.is-active(href="#") Структура акционерного капитала
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Устав
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Решения Совета директоров
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Информация о собраниях акционеров
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Информация об аудиторе
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Финансовая отчетность
+                      li.aside-page__item
+                        a.aside-page__link(href="#") Услуги
+                        ul.aside-page__sub
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Юридическим лицам
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Физическим лицам
+                      li.aside-page__item
+                        a.aside-page__link(href="#") Электроэнергия
+                      li.aside-page__item
+                        a.js-aside-nav-link-toggle.aside-page__link(href="#") Закупки
+                        ul.aside-page__sub
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Сведения о заключенных договорах
+                          li.aside-page__sub-item
+                            a.js-aside-nav-link-toggle.aside-page__sub-link(href="#") Управление закупочной деятельностью
+                            ul.aside-page__sub-second
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Положение и приложения
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Субъекты малого и среднего предпринимательства
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") План закупки 2020
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") План закупки 2021
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") План закупки 2022
+                          li.aside-page__sub-item
+                            a.js-aside-nav-link-toggle.aside-page__sub-link(href="#") Извещения о проведении закупок
+                            ul.aside-page__sub-second
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") 2020
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") 2021
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") 2022
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") 2023
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Сведения о применяемых электронных площадках
+              .row__col-9.typical-section__col-main
+                .typical-section__main
+                  h1.typical-section__main-title Структура акционерного капитала
+                  .typical-section__box-list
+                    article.box-tile.typical-section__box-item
+                      .box-tile__inner
+                        h3.box-tile__title Уставной капитал АО "Псковэнергоагент" составляет 8 705 000 (восемь миллионов семьсот пять тысяч) рублей.
+                        .content.box-tile__description
+                          p Доля ПАО "Россети Северо-Запад" в уставном капитале ОАО "Псковэнергоагент"-100%
+                          p Акции обыкновенные именные в количестве 8 705 000 (восемь миллионов семьсот пять тысяч) штук, номинальной стоимостью 1 (один) рубль за акцию.
+                          p Форма оплаты акций произведена имуществом по рыночной стоимости, определенной независимым оценщиком в сумме 2 805 000 (два миллиона восемьсот пять тысяч) рублей и денежными средствами в сумме 5 900 000 (пять миллионов девятьсот тысяч) рублей.
+                          p Общество зарегистрировано в органах государственной регистрации 18 августа 2004 г.
+
+      include includes/footer.pug
+
+    include includes/foot.pug

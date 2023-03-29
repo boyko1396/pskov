@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+html(lang='ru')
+  include includes/head.pug
+
+  body
+
+    #root
+      include includes/header.pug
+
+      main.main(role='main')
+        section.typical-section
+          .container.typical-section__container
+            .row.typical-section__row
+              .row__col-3.typical-section__col-aside
+                aside.aside-page.typical-section__aside
+                  nav.aside-page__nav
+                    ul.aside-page__list
+                      li.aside-page__item
+                        a.js-aside-nav-link-toggle.aside-page__link.is-active(href="#") О компании
+                        ul.aside-page__sub.is-show
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#").is-active Контакты и реквизиты
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Вакансии
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Новости
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Важная информация
+                          li.aside-page__sub-item
+                            a.js-aside-nav-link-toggle.aside-page__sub-link(href="#") Акционерам и инвесторам
+                            ul.aside-page__sub-second
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Структура акционерного капитала
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Устав
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Решения Совета директоров
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Информация о собраниях акционеров
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Информация об аудиторе
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Финансовая отчетность
+                      li.aside-page__item
+                        a.aside-page__link(href="#") Услуги
+                        ul.aside-page__sub
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Юридическим лицам
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Физическим лицам
+                      li.aside-page__item
+                        a.aside-page__link(href="#") Электроэнергия
+                      li.aside-page__item
+                        a.js-aside-nav-link-toggle.aside-page__link(href="#") Закупки
+                        ul.aside-page__sub
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Сведения о заключенных договорах
+                          li.aside-page__sub-item
+                            a.js-aside-nav-link-toggle.aside-page__sub-link(href="#") Управление закупочной деятельностью
+                            ul.aside-page__sub-second
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Положение и приложения
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Субъекты малого и среднего предпринимательства
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") План закупки 2020
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") План закупки 2021
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") План закупки 2022
+                          li.aside-page__sub-item
+                            a.js-aside-nav-link-toggle.aside-page__sub-link(href="#") Извещения о проведении закупок
+                            ul.aside-page__sub-second
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") 2020
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") 2021
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") 2022
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") 2023
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Сведения о применяемых электронных площадках
+              .row__col-9.typical-section__col-main
+                .typical-section__main
+                  h1.typical-section__main-title АО «Псковэнергоагент»
+                  .typical-section__box-list
+                    article.box-tile.typical-section__box-item
+                      .box-tile__inner
+                        .box-tile__contacts
+                          .contacts-line.box-tile__contacts-line
+                            span.contacts-line__text <strong>Юридический адрес:</strong><br>180006, Россия, г. Псков, ул. Старотекстильная, д. 32.
+                          .contacts-line.box-tile__contacts-line
+                            span.contacts-line__text ИНН 6027084023<br>КПП 602701001<br>ОГРН 1046000314249<br>ОКПО 12085467
+                          .contacts-line.box-tile__contacts-line
+                            span.contacts-line__text <strong>Банковские реквизиты:</strong><br>р/с 40702810551010103844<br>Псковское отделение № 8630 ПАО Сбербанк г. Псков<br>к/с 30101810300000000602<br>БИК 045805602
+                    article.box-tile.typical-section__box-item
+                      .box-tile__inner
+                        .box-tile__contacts
+                          .contacts-line.box-tile__contacts-line
+                            svg.contacts-line__icon
+                              use(xlink:href="images/sprite.svg#email")
+                            span.contacts-line__text e-mail: <a href="office@pskovenergoagent.ru" target="_blank"><span class="color-accent">office@pskovenergoagent.ru</span></a>
+                          .contacts-line.box-tile__contacts-line
+                            svg.contacts-line__icon
+                              use(xlink:href="images/sprite.svg#phone")
+                            span.contacts-line__text <a href="tel:+88112597659" target="_blank">8(8112) 59-76-59</a><br>факс 8(8112) 75-94-97
+                  .typical-section__doc-list
+                    .typical-section__doc-card
+                      .color-accent.typical-section__doc-card-title Файлы:
+                      .typical-section__doc-card-list
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Телефонный справочник АО Псковэнергоагент
+
+      include includes/footer.pug
+
+    include includes/foot.pug

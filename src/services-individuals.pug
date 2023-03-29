@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+html(lang='ru')
+  include includes/head.pug
+
+  body
+
+    #root
+      include includes/header.pug
+
+      main.main(role='main')
+        section.typical-section
+          .container.typical-section__container
+            .row.typical-section__row
+              .row__col-3.typical-section__col-aside
+                aside.aside-page.typical-section__aside
+                  nav.aside-page__nav
+                    ul.aside-page__list
+                      li.aside-page__item
+                        a.js-aside-nav-link-toggle.aside-page__link(href="#") О компании
+                        ul.aside-page__sub
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Контакты и реквизиты
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Вакансии
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Новости
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Важная информация
+                          li.aside-page__sub-item
+                            a.js-aside-nav-link-toggle.aside-page__sub-link(href="#") Акционерам и инвесторам
+                            ul.aside-page__sub-second
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Структура акционерного капитала
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Устав
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Решения Совета директоров
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Информация о собраниях акционеров
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Информация об аудиторе
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Финансовая отчетность
+                      li.aside-page__item
+                        a.aside-page__link.is-active(href="#") Услуги
+                        ul.aside-page__sub.is-show
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Юридическим лицам
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#").is-active Физическим лицам
+                      li.aside-page__item
+                        a.aside-page__link(href="#") Электроэнергия
+                      li.aside-page__item
+                        a.js-aside-nav-link-toggle.aside-page__link(href="#") Закупки
+                        ul.aside-page__sub
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Сведения о заключенных договорах
+                          li.aside-page__sub-item
+                            a.js-aside-nav-link-toggle.aside-page__sub-link(href="#") Управление закупочной деятельностью
+                            ul.aside-page__sub-second
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Положение и приложения
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") Субъекты малого и среднего предпринимательства
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") План закупки 2020
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") План закупки 2021
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") План закупки 2022
+                          li.aside-page__sub-item
+                            a.js-aside-nav-link-toggle.aside-page__sub-link(href="#") Извещения о проведении закупок
+                            ul.aside-page__sub-second
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") 2020
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") 2021
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") 2022
+                              li.aside-page__sub-second-item
+                                a.aside-page__sub-second-link(href="#") 2023
+                          li.aside-page__sub-item
+                            a.aside-page__sub-link(href="#") Сведения о применяемых электронных площадках
+              .row__col-9.typical-section__col-main
+                .typical-section__main
+                  h1.typical-section__main-title Услуги
+                  .row.typical-section__main-nav
+                    .row__col-6.typical-section__main-nav-col
+                      a.btn.btn--theme-accent.btn--size-sm.typical-section__main-nav-btn(href='#')
+                        span.btn__inner
+                          span.btn__title Физическим лицам
+                    .row__col-6.typical-section__main-nav-col
+                      a.btn.btn--theme-white.btn--size-sm.typical-section__main-nav-btn(href='#')
+                        span.btn__inner
+                          span.btn__title Юридическим лицам
+                  .row.typical-section__main-services
+                    .row__col-6.typical-section__main-services-col
+                      article.services-card.typical-section__main-services-card
+                        picture.services-card__picture
+                          img(src='images/services-card-7.svg' alt='Подготовка документов')
+                        .services-card__content
+                          a.services-card__link(href='#') Подготовка документов
+                    .row__col-6.typical-section__main-services-col
+                      article.services-card.typical-section__main-services-card
+                        picture.services-card__picture
+                          img(src='images/services-card-8.svg' alt='Бытовые услуги')
+                        .services-card__content
+                          a.services-card__link(href='#') Бытовые услуги
+                    .row__col-6.typical-section__main-services-col
+                      article.services-card.typical-section__main-services-card
+                        picture.services-card__picture
+                          img(src='images/services-card-2.svg' alt='Проверка счетчиков тепла')
+                        .services-card__content
+                          a.services-card__link(href='#') Проверка счетчиков тепла
+                    .row__col-6.typical-section__main-services-col
+                      article.services-card.typical-section__main-services-card
+                        picture.services-card__picture
+                          img(src='images/services-card-5.svg' alt='Срочная проверка электросчетчиков')
+                        .services-card__content
+                          a.services-card__link(href='#') Срочная проверка электросчетчиков
+                    .row__col-6.typical-section__main-services-col
+                      article.services-card.typical-section__main-services-card
+                        picture.services-card__picture
+                          img(src='images/services-card-3.svg' alt='Электротехнические услуги')
+                        .services-card__content
+                          a.services-card__link(href='#') Электротехнические услуги
+                    .row__col-6.typical-section__main-services-col
+                      article.services-card.typical-section__main-services-card
+                        picture.services-card__picture
+                          img(src='images/services-card-4.svg' alt='Проверка счетчиков воды')
+                        .services-card__content
+                          a.services-card__link(href='#') Проверка счетчиков воды
+                  .typical-section__doc-list
+                    .typical-section__doc-card
+                      .typical-section__doc-card-list
+                        .link-document.typical-section__doc-card-item
+                          .link-document__inner
+                            svg.link-document__icon
+                              use(xlink:href="images/sprite.svg#file-attach")
+                            .link-document__content
+                              a(href="#").link-document__link Перечень услуг со стоимостью для физических лиц
+
+      include includes/footer.pug
+    include includes/modal.pug
+
+    include includes/foot.pug
